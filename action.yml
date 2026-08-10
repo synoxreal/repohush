@@ -1,0 +1,25 @@
+name: RepoHush
+description: Scan repositories and AI coding agent configuration for exposed secrets and unsafe permissions.
+author: synoxreal
+branding:
+  icon: shield
+  color: blue
+inputs:
+  path:
+    description: Directory to scan
+    required: false
+    default: .
+  fail-on:
+    description: Minimum severity that fails the action
+    required: false
+    default: high
+outputs:
+  findings:
+    description: Total number of findings
+  critical:
+    description: Number of critical findings
+  high:
+    description: Number of high findings
+runs:
+  using: node20
+  main: dist/action.js

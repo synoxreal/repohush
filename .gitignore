@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+outputs/
+work/
+*.log
+.DS_Store
+.repohush-report.*

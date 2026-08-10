@@ -1,0 +1,49 @@
+{
+  "name": "repohush",
+  "version": "0.2.5",
+  "description": "Check a repo for leaked keys and risky agent settings.",
+  "type": "module",
+  "bin": {
+    "repohush": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "action.yml",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test",
+    "check": "npm run build && npm test",
+    "prepack": "npm run check"
+  },
+  "keywords": [
+    "ai-security",
+    "codex",
+    "cursor",
+    "claude-code",
+    "mcp",
+    "secrets",
+    "security-scanner",
+    "github-actions"
+  ],
+  "author": "Emre Kadir Şöhret (@synoxreal)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synoxreal/repohush.git"
+  },
+  "bugs": {
+    "url": "https://github.com/synoxreal/repohush/issues"
+  },
+  "homepage": "https://github.com/synoxreal/repohush#readme"
+}
